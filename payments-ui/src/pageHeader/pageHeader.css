@@ -2,7 +2,6 @@
     background-color: bisque;
     min-height: 80px;
     width: 100%;
-    padding: 10px;
 }
 
 .pageHeader h1 {
@@ -19,4 +18,4 @@
     padding: 20px;
     font-size: 1.5em;
     color: brown;
-}
+} 

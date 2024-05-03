@@ -24,7 +24,8 @@ plugins : [
         new ModuleFederationPlugin({
             name : 'container',
             remotes : {
-                staticpage: 'staticpage@http://localhost:3001/remoteEntry.js'
+                staticpage: 'staticpage@http://localhost:3001/remoteEntry.js',
+                paymentsadd: 'paymentsadd@http://localhost:3002/remoteEntry.js'
             },
             shared : ['react', 'react-dom']
         }

@@ -1,2 +1,2 @@
 declare module 'staticpage/HomePage';
-declare module  'AddPayments/AddPayments';
+declare module  'paymentsadd/AddPayments';

@@ -1,17 +1,17 @@
 import { useEffect, useRef } from "react";
-import mount from 'AddPayments/AddPayments';
+import mount from 'paymentsadd/AddPayments';
 
 const AddPaymentsRemote = () : JSX.Element => {
 
-    const homePageDiv = useRef<HTMLDivElement | null>(null);
+    const addPaymentesDiv = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-        mount(homePageDiv.current)
+        mount(addPaymentesDiv.current)
     },[]
     )
 
     return (
-        <div ref={homePageDiv} />
+        <div ref={addPaymentesDiv} />
     )
 
 }

@@ -2,6 +2,8 @@
 // import { Link } from "react-router-dom";
 // import { LoginContext, LoginContextType, UserType } from "../../context/context";
 
+import { Link } from "react-router-dom";
+
 
 const Menu = () : JSX.Element => {
 
@@ -11,11 +13,11 @@ const Menu = () : JSX.Element => {
 
     return (
         <ul className="nav">
-            <li>Find a transaction</li>
-            <li>New transaction</li>
+            <li><Link to="/find">Find a transaction</Link></li>
+            <li><Link to="/add">New transaction</Link></li>
             {/* <li>{ userDetails.id === 0 ? <Link to="/signin">Sign In</Link> : userDetails.name } </li> */}
             {/* <li>{ userDetails.name === "" ? <Link to="/signin">Sign In</Link> : userDetails.name } </li> */}
-            <li>Sign In </li>
+            <li><Link to="/signin">Sign In </Link></li>
         </ul>
     );
 }

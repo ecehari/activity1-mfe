@@ -1,15 +1,23 @@
 import './App.css'
-import PageHeader from './pageHeader/pageHeader'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PageHeader from './pageHeader/PageHeader'
 import HomePageRemote from './remoteComponents/HomePageRemote'
+import AddPaymentsRemote from './remoteComponents/AddPaymentsRemote';
+
 
 function App() {
   
 
   return (
     <>
-      {/* <h1>This is from container</h1> */}
-      <PageHeader/>
-      <HomePageRemote/>
+    <BrowserRouter>
+        {/* <h1>This is from container</h1> */}
+        <PageHeader />
+        <Routes>
+        <Route path="/add" element={ <AddPaymentsRemote /> } />
+        <Route path="/home" element={ <HomePageRemote /> } />        
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
