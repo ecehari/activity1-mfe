@@ -22,10 +22,10 @@ plugins : [
             template : './index.html'
         }),
         new ModuleFederationPlugin({
-            name : 'payments-add',
+            name : 'paymentsadd',
             filename : 'remoteEntry.js',
             exposes :
-                {'./NewTransaction' : './src/NewTransaction/indexNewTransaction'}
+                {'./AddPayments' : './src/AddPayments/indexAddPayments'}
         }
         )
     ],

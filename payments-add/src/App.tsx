@@ -1,5 +1,5 @@
+import AddPayments from './AddPayments/AddPayments'
 import './App.css'
-import AddPayments from './addPayments/addPayments'
 
 function App() {
 
